@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The first function, makeCasheMatrix creates a list containing a function to
 
-## Write a short comment describing this function
+##set the value of the matrix
+##get the value of the matrix
+##set the value of the inverted matrix
+##get the value of the inverted matrix
+
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -19,7 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The following function calculates the inverted matrix created with the above function. 
+##However, it first checks to see if the inverted matrix has already been calculated.
+##If so, it gets the inverted matrix from the cache and skips the computation.
+##Otherwise, it calculates the inverted matrix of the data and sets the value of theinverted matrix in the cache via the setmean function.
 
 cacheSolve <- function(x, ...) {
  m <- x$getinv()
